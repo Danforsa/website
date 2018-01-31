@@ -16,7 +16,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    '/Project/tutorials/django/music/static',
+    # '/Project/tutorials/django/music/static',
     ]
 
 STATIC_URL = '/static/'
@@ -36,7 +36,7 @@ ALLOWED_HOSTS = ['danielfortes201811.herokuapp.com']
 
 
 STATICFILES_DIRS= [
-    "/Project/tutorials/django/music/static",
+    # "music/static",
 
 ]
 # Application definition
@@ -133,10 +133,10 @@ USE_TZ = True
 
 
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-    '/var/www/static/',"static_cdn"
-]
-STATICFILES_STORAGE=    'whitenoise.django.GzipManifestStaticFilesStorage'
+# STATICFILES_DIRS = [
+    # os.path.join(BASE_DIR, "static"),
+    #'/var/www/static/',"static_cdn"
+#]
+#STATICFILES_STORAGE=    'whitenoise.django.GzipManifestStaticFilesStorage'
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATIC_URL = '/static/'
