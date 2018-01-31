@@ -133,10 +133,10 @@ USE_TZ = True
 
 
 
-# STATICFILES_DIRS = [
-    # os.path.join(BASE_DIR, "static"),
+STATICFILES_DIRS = [
+     os.path.join(BASE_DIR, "static"),
     #'/var/www/static/',"static_cdn"
-#]
+]
 #STATICFILES_STORAGE=    'whitenoise.django.GzipManifestStaticFilesStorage'
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATIC_URL = '/static/'
