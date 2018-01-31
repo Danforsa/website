@@ -140,3 +140,11 @@ USE_TZ = True
 #STATICFILES_STORAGE=    'whitenoise.django.GzipManifestStaticFilesStorage'
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATIC_URL = '/static/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'danieldjangotutorial@gmail.com' 
+EMAIL_HOST_PASSWORD = 'Message123'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+

@@ -59,6 +59,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
           </li>
+	  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -71,10 +74,10 @@
           <h1 class="mb-0">Daniel
             <span class="text-primary">Fortes</span>
           </h1>
-          <div class="subheading mb-5">BA (AFDA)Ph. 084 087 4006 (mobile)Date of Birth: 23 January 1984 Residence: Camps Bay, Cape Town·
+          <div class="subheading mb-5">BA (AFDA)Ph. 084 087 **** (mobile)Date of Birth: 23 January 1984 Residence: Camps Bay, Cape Town·
             <a href="mailto:name@email.com">daniel.m.fortes@me.com</a>
           </div>
-          <p class="mb-5">S“Getting the Best From People”Central to all training is to identify strengths in each individual and to build from there.
+          <p class="mb-5">“Getting the Best From People” Central to all training is to identify strengths in each individual and to build from there.
           	Use encouragement as a pillar to all programs, taking a positive, upbeat approach.Practice the art of listening, 
           	uncovering real needs, taking a personal interest. Have a record of patience, of a calm but decisive response to high-pressure situations..</p>
           <ul class="list-inline list-social-icons mb-0">
@@ -278,6 +281,20 @@
           </ul>
         </div>
       </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contact">
+        <div class="my-auto">
+          <h2 class="mb-5">Contact</h2>
+          <ul class="fa-ul mb-0">
+	  <form role="form" action="" method="post">
+    	    {% csrf_token %}
+    	    {{ form.as_p }}
+    	    <button type="submit">Submit</button>
+	  </form>
+          </ul>
+        </div>
+      </section>
+
 
     </div>
 
