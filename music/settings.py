@@ -31,7 +31,7 @@ SECRET_KEY = 'trjb2%g183777w1v0@-xj%4lhuc%usldschq5-3z@!6*z$e76y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['danielfortes201811.herokuapp.com']
+# ALLOWED_HOSTS = ['danielfortes201811.herokuapp.com']
 
 
 
@@ -141,10 +141,9 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATIC_URL = '/static/'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'danieldjangotutorial@gmail.com' 
 EMAIL_HOST_PASSWORD = 'Message123'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-
